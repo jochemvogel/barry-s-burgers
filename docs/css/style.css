@@ -12,7 +12,7 @@
 body { 
     font-family: 'Nunito', sans-serif;
     height: 145vh;
-    background-color: #64485C;
+    background-color: var(--white);
     overflow-x: hidden;
 }
 
@@ -21,7 +21,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #adadad;
+    background-color: var(--white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     grid-area: header;
     position: relative;
 }
@@ -113,7 +114,7 @@ div {
   width: 100%;
   height: 100%;
   line-height: 260px;
-  color: white;
+  color: var(--black);
   text-align: center;
   font-weight: bold;
   font-size: 40px;
@@ -124,11 +125,11 @@ div {
 }
 
 div:first-child {
-    background: #2e1114;
+    background: #fff;
 }
 
 div:last-child, img {
-    background: #501B1D;
+    background: #fff;
     transform: rotateY(180deg);
 }
 
@@ -136,8 +137,9 @@ circle {
     float: left;
     height: 200px;
     width: 200px;
-    shape-outside: circle();
-    /*clip-path: circle(); */
+    shape-outside: circle(25%);
+    
+    /* clip-path: circle(25%); */
     background: linear-gradient(to top right, #FDB171, #FD987D);
     display: flex;
     justify-content: center;
@@ -148,7 +150,7 @@ circle {
 circle:hover {
     height: 400px;
     width: 400px;
-    transition: 100s;
+    transition: 5s;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -159,16 +161,17 @@ footer {
     left: 0;
     width: 100%;
     min-height: 5rem;
-    background: crimson;
+    background: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: footer;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer p {
     font-size: 2rem;
-    color: #fff;
+    color: var(--black);
 }
 
 hgroup {
