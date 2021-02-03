@@ -122,11 +122,12 @@ div:last-child, img {
 }
 
 figure {
-    float: left;
+    /* float: left; */
     height: 200px;
     width: 200px;
+    clip-path: circle();
     shape-outside: circle();
-    shape-margin: 25px;
+    -webkit-shape-outside: circle();
     background: linear-gradient(to top right, #FDB171, #FD987D);
 }
 
