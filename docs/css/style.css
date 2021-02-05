@@ -24,7 +24,6 @@ header {
     background-color: var(--white);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     grid-area: header;
-    /* position: fixed; */
     top: 0;
     width: 100%;
     z-index: 3;
@@ -124,7 +123,7 @@ div:last-child, img {
 }
 
 figure {
-    /* float: left; */
+    float: left;
     height: 200px;
     width: 200px;
     clip-path: circle();
@@ -164,4 +163,18 @@ hgroup {
     display: flex;
     justify-content: center;
     padding-top: 20rem;
+}
+
+hgroup > p {
+    max-width: 300px;
+    float:left;
+}
+
+/*
+🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈
+*/
+
+.working-circle {
+    transform: rotateY(360deg) translateX(125%);
+    margin-top: 5em;
 }

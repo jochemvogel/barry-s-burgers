@@ -1,0 +1,69 @@
+::selection {
+    background-color: blue;
+    color: red;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 1.5s cubic-bezier(.75,-0.06,.06,1.54);
+}
+
+h1:hover {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: rotate(-5deg);
+    letter-spacing: 25px;
+}
+
+h1:hover::after {
+    content: ' 🍔';
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+}
+
+main {
+    width: 210mm;
+    background-color: #cdcdcd;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    border: 2px solid black;
+    width: 50%;
+    transition: transform 2s cubic-bezier(0.5, -2, 0.05, 4);
+    background-color: red;
+    cursor: help;
+}
+
+article:hover {
+    transform: rotateY(-180deg) scale(1.75);
+    width: 75%;
+    height: 200px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+article:active {
+    transform: scale(1.4);
+}
+
+article:active h3::after{
+    content: ' 🥳';
+}
