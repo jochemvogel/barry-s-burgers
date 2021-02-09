@@ -3,6 +3,11 @@
     color: red;
 }
 
+:root {
+    --white: hsl(0, 0%, 98%);
+    --black: hsl(0, 0%, 8%);
+}
+
 h1 {
     font-family: 'Courier New', Courier, monospace;
     transition: all 1.5s cubic-bezier(.75,-0.06,.06,1.54);
@@ -32,11 +37,65 @@ body {
     flex-direction: column;
     width: 100vw;
     text-align: center;
+    margin: 0;
+}
+
+div[data-background] {
+    --chess-black: hsl(0, 0%, 10%);
+    --chess-white: hsl(0, 0%, 98%);
+    --squares: 100px;
+    --degrees: 45deg;
+
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--chess-white);
+    background-image: linear-gradient(var(--degrees), var(--chess-black) 25%, 0%, transparent 75%, var(--chess-black) 0%),
+    linear-gradient(-45deg, var(--chess-black) 25%, 0%, transparent 75%, var(--chess-black) 0%);
+    background-size: var(--squares) var(--squares);
+
+    z-index: -1;
+}
+
+div[data-background] > div { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.4);
+    z-index: 2;
+}
+
+body > header {
+    background-color: rgba(20, 20, 20, 0.95);
+    box-shadow: 0 15px 8px rgba(20, 20, 20, 0.4);
+    padding: 0.25em;
+    border-radius: 0.5em;
+    color: var(--white);
+    position: fixed;
+    width: 55%;
+    top: 1%;
 }
 
 main {
+    --wood-color: hsl(14, 100%, 5%);
+    --light-wood-color: hsl(36, 61%, 73%);
+
     width: 210mm;
-    background-color: #cdcdcd;
+    background-color: var(--wood-color);
+    background-image: url('../assets/wood-pattern.png');
+    border-radius: 1em;
+    box-shadow: 0 5px 6px rgba(20, 20, 20, 0.4);
+
+    padding-bottom: 2em;
+    margin: 10em 0 5em 0;
+
+    color: var(--white);
+    /* color: var(--black); For later => dynamic based on checkbox user  */ 
 }
 
 section {
@@ -45,12 +104,41 @@ section {
     align-items: center;
 }
 
+section header {
+    background-color: rgba(26, 6, 0, 0.8);
+    width: 45%;
+    margin: 2em;
+    border-radius: 0.5em;
+}
+
+hr {
+    margin-top: 2em;
+    border-top: 2px dotted var(--white);
+    border-bottom: none;
+    width: 75%;
+}
+
+hr:hover {
+    transform: rotate(90deg);
+}
+
 article {
-    border: 2px solid black;
+    border: 2px solid var(--black);
     width: 50%;
     transition: transform 2s cubic-bezier(0.5, -2, 0.05, 4);
-    background-color: red;
+
+    /*
+    Reminder:
+    
+    Probeer een soort 'engraving' effect te creeeren.
+    Article zit met een inset box shadow erin
+    Lijkt net of het erin gegrafeerd is. Probeer zoiets.
+
+    */
+
+    background-color: hsla(15, 78%, 7%, 0.9);
     cursor: help;
+    margin: 0.5em;
 }
 
 article:hover {
