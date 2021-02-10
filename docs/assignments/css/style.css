@@ -6,6 +6,8 @@
 :root {
     --white: hsl(0, 0%, 98%);
     --black: hsl(0, 0%, 8%);
+
+    --squares: 100px;
 }
 
 h1 {
@@ -44,7 +46,6 @@ body {
 div[data-background] {
     --chess-black: hsl(0, 0%, 10%);
     --chess-white: hsl(0, 0%, 98%);
-    --squares: 100px;
     --degrees: 45deg;
 
     position: fixed; 
@@ -117,13 +118,13 @@ section header {
 /* === SECTION SEPERATOR === */
 hr {
     margin-top: 2em;
-    border-top: 2px dotted var(--white);
+    border-top: 3px dotted hsl(36, 61%, 73%);
     border-bottom: none;
     width: 75%;
 }
 
 hr:hover {
-    transform: rotate(90deg);
+    animation: rotateHr 8s forwards;
 }
 
 /* === MENU ITEM === */
@@ -131,17 +132,17 @@ article {
     width: 50%;
     /* transition: all 1.5s cubic-bezier(0.5, -2, 0.05, 4); xtreme */
     transition: all 0.5s ease-out;
-    background-color: hsla(26, 29%, 20%, 0.85);
+    background-color: hsla(26, 29%, 30%, 0.98);
     cursor: help;
     margin: 0.5em;
-    box-shadow: inset 0 0 2px 3px hsla(15, 78%, 7%, 0.7);
+    box-shadow: inset 0 0 1px 3px hsl(30, 48%, 16%);
 }
 
 /* Engraved text is not working yet */
 article p,
 article h3 {
-    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px hsla(15, 78%, 7%, 0.7);
-    color: hsla(26, 29%, 40%, 1);
+    text-shadow: 0px 0.5px 0px hsl(26, 29%, 40%), 0px -0.5px 0px hsla(26, 29%, 7%, 0.4);
+    color: hsl(26, 29%, 10%);
 }
 
 article:hover {
@@ -157,4 +158,78 @@ article:active {
 
 article:active h3::after{
     content: ' 🥳';
+}
+
+div > p {
+    position: fixed;
+    color: var(--white);
+    font-size: 1.5em;
+    left: 21%;
+    top: 1%;
+}
+
+div > input {
+    position: absolute;
+    display: none;
+}
+
+div > input:checked + label {
+    text-decoration: underline;
+}
+
+div > label {
+    position: fixed;
+    top: 5%;
+    color: var(--white);
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+/* SMALL */
+div > label:nth-of-type(1) {
+    left: 20%;
+}
+
+/* MEDIUM */
+div > label:nth-of-type(2) {
+    left: 25%;
+}
+
+/* BIG */
+div > label:nth-of-type(3) {
+    left: 32%;
+}
+
+#small:checked ~ div[data-background] {
+    --squares: 50px;
+}
+
+#large:checked ~ div[data-background] {
+    --squares: 200px;
+}
+
+
+/* === KEYFRAMES === */
+@keyframes rotateHr {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    65% {
+        transform: rotate(90deg);
+    }
+    66% {
+        transform: rotate(720deg)
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    90% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
 }

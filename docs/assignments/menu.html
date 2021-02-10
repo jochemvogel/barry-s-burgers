@@ -7,14 +7,28 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-		<div data-background>
-			<div></div>
-		</div>
 		<header>
 			<h1><span>Barry's</span> <span> </span> <span>Burgers</span></h1>
 			<p>making delicious burgers since 1924</p>
-		
 		</header>
+
+		<!-- CHECKERED BACKGROUND -->
+		<div>
+			<p>Change background squares size</p>
+
+			<input type="radio" id="small" name="size" value="small">
+			<label for="small">Small</label>
+
+			<input type="radio" id="medium" name="size" value="medium" checked>
+			<label for="medium">Medium</label>
+			
+			<input type="radio" id="large" name="size" value="large">
+			<label for="large">Large</label>
+
+			<div data-background>
+				<div></div>
+			</div>
+		</div>
 
 		<!-- MENU CARD -->
 		<main>
