@@ -1,0 +1,41 @@
+body > div,
+hr {
+    display: none;
+}
+
+main {
+    background: none;
+    width: 95%;
+    border-top: 1px solid hsla(var(--black-hsl-values), 0.2);
+}
+
+body > header {
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 85%;
+    position: absolute;
+    top: 1%;
+}
+
+body > header > p {
+    margin-top: -1em;
+}
+
+section {
+    margin-top: 0;
+    page-break-after: always;
+}
+
+section > header {
+    background-color: transparent;
+    color: hsla(var(--black-hsl-values), 0.7);
+    margin: 0;
+}
+
+article {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
