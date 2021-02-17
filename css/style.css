@@ -1,3 +1,5 @@
+@import './burger.css';
+
 :root {
 	/* Can be used with opacity (hsla) */
 	--white-hsl-values: 0, 0%, 100%;
@@ -56,7 +58,7 @@ body {
 div[data-background] {
 	--degrees: 45deg;
 
-	transition: background 6s;
+	transition: all 6s ease-out;
 	transform-origin: center;
 
 	/* transfform origin

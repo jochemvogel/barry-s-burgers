@@ -1,50 +1,112 @@
 :root {
-    --pit-white: #ffffff;
-    --cheese-yellow: #fddb28;
-    --meat-brown: #681f24;
-    --pickle-green: #82af15;
-    --bread-orange: #f5b230;
+	--pit-white: hsl(0, 0%, 100%);
+	--cheese-yellow: hsl(50, 98%, 57%);
+	--meat-brown: hsl(356, 54%, 26%);
+	--pickle-green: hsl(78, 79%, 38%);
+	--bread-orange: hsl(40, 91%, 57%);
+	--ketchup-red: hsl(0, 79%, 48%);
+
+	--top-pits-position: -160px;
+	--bottom-pits-position: -135px;
+
+	--bread-height: 55px;
+	--burger-width: 380px;
+
+	--offset-x-items: 10px;
 }
 
-.burger {
-  width: 380px;
-  height: 40px;
-  border-radius: 15px; 
-  box-shadow: 
-    10px 50px var(--cheese-yellow), 
-    10px 85px var(--meat-brown),
-    10px 120px var(--pickle-green); 
+#burger-container {
+	height: 200px;
+	width: var(--burger-width);
+	margin: 2.5em auto;
 }
 
-.burger:before {
-  content: "";
-  white-space: pre;
-  font-size: 120px;
-  line-height: 22px;
-  color: var(--cheese-yellow);
-  display: block;
-  width: 400px;
-  height: 55px;
-  border-top: 80px solid var(--bread-orange); 
-  border-bottom: 50px solid var(--bread-orange); 
-  border-radius: 30% 30% 20% 20%; 
+#burger {
+	width: var(--burger-width);
+	height: 40px;
+	border-radius: 15px;
+	box-shadow: var(--offset-x-items) 50px var(--pickle-green),
+		var(--offset-x-items) 85px var(--meat-brown),
+		var(--offset-x-items) 120px var(--cheese-yellow);
+	transition: all 0.2s;
 }
 
-.burger:after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 6px;
-  border-radius: 40%;
-  box-shadow: 
-    100px -165px var(--pit-white),
-    160px -165px var(--pit-white),
-    230px -165px var(--pit-white),
-    290px -165px var(--pit-white),
+/* BREAD */
+#burger:before {
+	content: '';
+	color: var(--cheese-yellow);
+	display: block;
+	width: 400px;
+	height: var(--bread-height);
+	border-top: 80px solid var(--bread-orange);
+	border-bottom: 50px solid var(--bread-orange);
+	border-radius: 30% 30% 20% 20%;
+}
 
-    60px -135px var(--pit-white),
-    125px -135px var(--pit-white),
-    195px -135px var(--pit-white),
-    255px -135px var(--pit-white),
-    330px -135px var(--pit-white);
+/* PITS */
+#burger:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 6px;
+	border-radius: 35%;
+	box-shadow: 100px var(--top-pits-position) var(--pit-white),
+		160px var(--top-pits-position) var(--pit-white),
+		230px var(--top-pits-position) var(--pit-white),
+		290px var(--top-pits-position) var(--pit-white),
+		60px var(--bottom-pits-position) var(--pit-white),
+		125px var(--bottom-pits-position) var(--pit-white),
+		195px var(--bottom-pits-position) var(--pit-white),
+		255px var(--bottom-pits-position) var(--pit-white),
+		330px var(--bottom-pits-position) var(--pit-white);
+}
+
+/* INCREASE SIZE ON HOVER */
+#burger:hover {
+	--bread-height: 125px;
+	--top-pits-position: -230px;
+	--bottom-pits-position: -205px;
+
+	box-shadow: var(--offset-x-items) 50px var(--pickle-green),
+		var(--offset-x-items) 85px var(--meat-brown),
+		var(--offset-x-items) 120px var(--cheese-yellow),
+		var(--offset-x-items) 155px var(--meat-brown),
+		var(--offset-x-items) 180px var(--ketchup-red);
+
+	animation: shuffleHamburger 1s forwards;
+}
+
+#burger:hover::before {
+	border-radius: 25% 25% 20% 20%;
+}
+
+@keyframes shuffleHamburger {
+	0% {
+		transform: rotate(0);
+	}
+	10% {
+		transform: rotate(5deg);
+	}
+	20% {
+		transform: rotate(-5deg);
+	}
+	30% {
+		transform: rotate(5deg);
+	}
+	40% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(5deg);
+	}
+	60% {
+		transform: rotate(-5deg);
+	}
+	70% {
+		transform: rotate(5deg);
+	}
+	80%,
+	100% {
+		transform: rotate(0);
+	}
 }
