@@ -1,4 +1,6 @@
-# CSS to the Rescue @cmda-minor-web 2020 - 2021
+# Barry's Burgers
+
+Description will be updated later
 
 ### Week 4
 
