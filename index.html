@@ -6,13 +6,9 @@
 	<title>Barry's Burgers &mdash; delicous burgers since 1924</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
+	<link rel="shortcut icon" href="https://images.emojiterra.com/google/android-10/512px/1f354.png" type="image/x-icon">
 </head>
 <body>
-		<header tabindex="0">
-			<h1 tabindex="0"><span>Barry's</span> <span> </span> <span>Burgers</span></h1>
-			<p tabindex="0">making delicious burgers since 1924</p>
-		</header>
-
 		<!-- CHECKERED BACKGROUND -->
 		<div>
 			<p tabindex="-1">Change background squares size</p>
@@ -31,15 +27,45 @@
 			</div>
 		</div>
 
+		<header tabindex="0">
+			<h1 tabindex="0"><span>Barry's</span> <span> </span> <span>Burgers</span></h1>
+			<p tabindex="0">making delicious burgers since 1924</p>
+		</header>
+
 		<!-- MENU CARD -->
 		<main>
+			<ul>
+				<li>
+					<a href="#burgers">
+						Burgers
+					</a>
+				</li>
+				<li>
+					<a href="#toppings">
+						Toppings
+					</a>
+				</li>
+				<li>
+					<a href="#drinks">
+						Drinks
+					</a>
+				</li>
+				<li>
+					<a href="#extras">
+						Extras
+					</a>
+				</li>
+			</ul>
 
-			<div id="burger-container">
+			<hr />
+
+			<div data-burger-container>
 				<div>
 					<div></div>
 				</div>
 			</div>
-			<section tabindex="0">
+
+			<section id="burgers" tabindex="0">
 				<header>
 					<h2 tabindex="0">Burgers</h2>
 					<p>Subtitle</p>
@@ -95,7 +121,7 @@
 
 			<hr />
 
-			<section>
+			<section id="toppings">
 				<header>
 					<h2>Toppings</h2>
 					<p>open-faced sandwiches</p>
@@ -128,8 +154,7 @@
 
 			<hr />
 
-			<section>
-
+			<section id="drinks">
 				<header>
 					<h2>Drinks</h2>
 					<p>To be shared</p>
@@ -162,7 +187,7 @@
 
 			<hr />
 
-			<section>
+			<section id="extras">
 
 				<header>
 					<h2>Extras</h2>

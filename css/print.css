@@ -1,5 +1,6 @@
 body > div,
-hr {
+hr,
+main ul {
 	display: none;
 }
 
@@ -38,9 +39,4 @@ section > header {
 article {
 	break-inside: avoid;
 	page-break-inside: avoid;
-}
-
-#burger {
-	display: none;
-	visibility: hidden;
 }

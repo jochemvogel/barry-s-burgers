@@ -15,16 +15,16 @@
 	--offset-x-items: 10px;
 }
 
-#burger-container {
+div[data-burger-container] {
 	height: 200px;
 	width: var(--burger-width);
 	margin: 2.5em 0;
 	filter: drop-shadow(10px 5px 10px #000);
 }
 
-#burger-container > div {
-	position: sticky;
-	top: 150px;
+/* BURGER */
+div[data-burger-container] > div {
+	position: relative;
 	width: var(--burger-width);
 	height: 40px;
 	border-radius: 15px;
@@ -37,7 +37,7 @@
 }
 
 /* BREAD */
-#burger-container > div:before {
+div[data-burger-container] > div:before {
 	content: '';
 	color: var(--cheese-yellow);
 	display: block;
@@ -49,7 +49,7 @@
 }
 
 /* PITS */
-#burger-container > div:after {
+div[data-burger-container] > div:after {
 	content: '';
 	display: block;
 	width: 10px;
@@ -67,7 +67,7 @@
 }
 
 /* INCREASE SIZE ON HOVER */
-#burger-container > div:hover {
+div[data-burger-container] > div:hover {
 	--bread-height: 125px;
 	--top-pits-position: -230px;
 	--bottom-pits-position: -205px;
@@ -81,11 +81,12 @@
 	animation: shuffleHamburger 1s infinite;
 }
 
-#burger-container > div:hover::before {
+div[data-burger-container] > div:hover::before {
 	border-radius: 25% 25% 20% 20%;
 }
 
-#burger-container > div > div {
+/* LASER */
+div[data-burger-container] > div > div {
 	position: absolute;
 	background-color: red;
 	clip-path: polygon(100% 0, 0% 0, 100% 1%, 0 100%);
@@ -98,16 +99,16 @@
 	transform: scale(2.5);
 }
 
-#burger-container:active > div > div {
+div[data-burger-container]:active > div > div {
 	animation: lasersFired 0.2s forwards;
 	opacity: 1;
 }
 
-#burger-container:active > div {
+div[data-burger-container]:active > div {
 	--bread-orange: hsl(356, 61%, 18%);
 }
 
-#burger-container:active {
+div[data-burger-container]:active {
 	transition: all 0.1s;
 	transform: scale(0.9);
 }
