@@ -1,0 +1,19 @@
+main {
+	/* --wood-color: hsl(14, 100%, 5%); */
+	/* --light-wood-color: hsl(36, 61%, 73%); */
+
+	width: var(--menu-width);
+	background-color: var(--brown);
+	background-image: url('../../assets/wood-pattern.png');
+	border-radius: 1em;
+	box-shadow: 0 5px 6px hsla(var(--black-hsl-values), 0.4);
+
+	padding-bottom: 2em;
+	margin: 10em 0 5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	color: var(--white);
+	z-index: 2;
+}

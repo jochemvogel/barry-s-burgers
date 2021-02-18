@@ -1,0 +1,28 @@
+body > header {
+	background-color: hsla(var(--black-hsl-values), 0.95);
+	box-shadow: 0 15px 8px hsla(var(--black-hsl-values), 0.4);
+	padding: 0.25em;
+	border-radius: 0.5em;
+	color: var(--white);
+	position: fixed;
+	width: 60%;
+	top: 1%;
+	z-index: 3;
+}
+
+h1 {
+	transition: all 1.5s cubic-bezier(0.75, -0.06, 0.06, 1.54);
+}
+
+h1:hover {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	transform: rotate(-5deg);
+	letter-spacing: 25px;
+}
+
+h1:hover::after {
+	content: ' 🍔';
+}

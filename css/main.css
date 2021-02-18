@@ -1,0 +1,12 @@
+@import './General/general.css';
+@import './General/typography.css';
+
+@import './Background/background.css';
+@import './Burger/burger.css';
+@import './Header/header.css';
+@import './Input/squares.css';
+@import './Animations/animations.css';
+@import './MenuCard/card.css';
+@import './MenuCard/menu.css';
+@import './MenuCard/navigation.css';
+@import './MenuCard/section.css';

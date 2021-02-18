@@ -1,0 +1,36 @@
+:root {
+	/* Can be used with opacity (hsla) */
+	--white-hsl-values: 0, 0%, 100%;
+	--black-hsl-values: 0, 0%, 0%;
+	--dark-brown-hsl-values: 14, 100%, 5%;
+	--brown-hsl-values: 26, 29%, 40%;
+
+	--white: hsl(var(--white-hsl-values));
+	--black: hsl(var(--black-hsl-values));
+	--dark-brown: hsl(var(--dark-brown-hsl-values));
+	--brown: hsl(var(--brown-hsl-values));
+
+	/* --liht-wood: hsl(36, 61%, 73%) => for later usage  */
+
+	--menu-width: 210mm;
+
+	--squares: 100px;
+}
+
+::selection {
+	background-color: var(--brown);
+	color: var(--white);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	text-align: center;
+	margin: 0;
+}

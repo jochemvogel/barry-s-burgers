@@ -1,0 +1,28 @@
+main ul {
+	display: flex;
+	margin: 0.5em 0 0 0;
+}
+
+main ul li {
+	margin: 2em;
+	list-style: none;
+}
+
+main ul li:hover {
+	animation: hoverShuffle 1s infinite;
+	text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+		-1px 1px 0 var(--black), 1px 1px 0 var(--black);
+}
+
+main ul li a {
+	text-decoration: none;
+	color: var(--white);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+main ul li:hover {
+	transform: scale(1.1);
+}
