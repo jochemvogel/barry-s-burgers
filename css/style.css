@@ -22,6 +22,10 @@
 	color: var(--white);
 }
 
+/* html {
+	
+} */
+
 h1 {
 	font-family: 'Courier New', Courier, monospace;
 	transition: all 1.5s cubic-bezier(0.75, -0.06, 0.06, 1.54);
@@ -61,16 +65,13 @@ div[data-background] {
 	transition: all 6s ease-out;
 	transform-origin: center;
 
-	/* transfform origin
-
-    inzoomen
+	/*
 
     ander plek
 
     div erom heen
     daar hover
-
-    ding erom heen blijft staan
+	ding erom heen blijft staan
 
     MENU met klikken burgers, 
 
@@ -137,9 +138,11 @@ main {
 
 	padding-bottom: 2em;
 	margin: 10em 0 5em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	color: var(--white);
-	/* color: var(--black); For later => dynamic based on checkbox user  */
 }
 
 /* === MENU SECTIOON === */
