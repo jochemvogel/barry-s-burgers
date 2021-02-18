@@ -15,15 +15,15 @@
 	--offset-x-items: 10px;
 }
 
-div[data-burger-container] {
+body > div:last-of-type {
 	height: 200px;
 	width: var(--burger-width);
-	margin: 2.5em 0;
+	margin: 15em 0 5em 0;
 	filter: drop-shadow(10px 5px 10px #000);
 }
 
 /* BURGER */
-div[data-burger-container] > div {
+body > div:last-of-type > div {
 	position: relative;
 	width: var(--burger-width);
 	height: 40px;
@@ -37,7 +37,7 @@ div[data-burger-container] > div {
 }
 
 /* BREAD */
-div[data-burger-container] > div:before {
+body > div:last-of-type > div:before {
 	content: '';
 	color: var(--cheese-yellow);
 	display: block;
@@ -49,7 +49,7 @@ div[data-burger-container] > div:before {
 }
 
 /* PITS */
-div[data-burger-container] > div:after {
+body > div:last-of-type > div:after {
 	content: '';
 	display: block;
 	width: 10px;
@@ -67,7 +67,7 @@ div[data-burger-container] > div:after {
 }
 
 /* INCREASE SIZE ON HOVER */
-div[data-burger-container] > div:hover {
+body > div:last-of-type > div:hover {
 	--bread-height: 125px;
 	--top-pits-position: -230px;
 	--bottom-pits-position: -205px;
@@ -81,12 +81,12 @@ div[data-burger-container] > div:hover {
 	animation: hoverShuffle 1s infinite;
 }
 
-div[data-burger-container] > div:hover::before {
+body > div:last-of-type > div:hover::before {
 	border-radius: 25% 25% 20% 20%;
 }
 
 /* LASER */
-div[data-burger-container] > div > div {
+body > div:last-of-type > div > div {
 	position: absolute;
 	background-color: red;
 	clip-path: polygon(100% 0, 0% 0, 100% 1%, 0 100%);
@@ -99,16 +99,16 @@ div[data-burger-container] > div > div {
 	transform: scale(2.5);
 }
 
-div[data-burger-container]:active > div > div {
+body > div:last-of-type:active > div > div {
 	animation: lasersFired 0.2s forwards;
 	opacity: 1;
 }
 
-div[data-burger-container]:active > div {
+body > div:last-of-type:active > div {
 	--bread-orange: hsl(356, 61%, 18%);
 }
 
-div[data-burger-container]:active {
+body > div:last-of-type:active {
 	transition: all 0.1s;
 	transform: scale(0.9);
 }

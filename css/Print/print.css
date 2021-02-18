@@ -1,4 +1,4 @@
-body > div,
+body > div:first-of-type,
 hr,
 main ul {
 	display: none;
@@ -8,6 +8,7 @@ main {
 	background: none;
 	width: 95%;
 	border-top: 1px solid hsla(var(--black-hsl-values), 0.2);
+	margin-top: 27.5em;
 }
 
 body > header {
@@ -27,7 +28,7 @@ body > header > p {
 
 section {
 	margin-top: 0;
-	page-break-after: always;
+	page-break-before: always;
 }
 
 section > header {
@@ -39,4 +40,21 @@ section > header {
 article {
 	break-inside: avoid;
 	page-break-inside: avoid;
+}
+
+body > div:last-of-type {
+	margin-top: 20em;
+}
+
+body > div:last-of-type > div {
+	--bread-height: 125px;
+	--top-pits-position: -230px;
+	--bottom-pits-position: -205px;
+
+	box-shadow: var(--offset-x-items) 50px var(--pickle-green),
+		var(--offset-x-items) 85px var(--meat-brown),
+		var(--offset-x-items) 120px var(--cheese-yellow),
+		var(--offset-x-items) 155px var(--meat-brown),
+		var(--offset-x-items) 180px var(--ketchup-red);
+	transform: rotate(3deg);
 }

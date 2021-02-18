@@ -1,4 +1,6 @@
-/* === KEYFRAMES === */
+/*
+Rotates the HR on hover
+*/
 @keyframes rotateHr {
 	0% {
 		transform: rotate(0deg);
@@ -23,6 +25,9 @@
 	}
 }
 
+/*
+Creates shuffle effect on hover
+*/
 @keyframes hoverShuffle {
 	0% {
 		transform: rotate(-5deg) scale(1.05);
