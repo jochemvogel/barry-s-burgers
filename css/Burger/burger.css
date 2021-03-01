@@ -36,6 +36,12 @@ body > div:last-of-type > div {
 		auto;
 }
 
+@media only screen and (max-width: 400px) {
+	body > div:last-of-type > div {
+		display: none;
+	}
+}
+
 /* BREAD */
 body > div:last-of-type > div:before {
 	content: '';
