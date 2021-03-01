@@ -10,7 +10,7 @@ article {
 
 article p,
 article h3,
-article > div > div {
+article > div {
 	text-shadow: 0px 0.5px 0px var(--brown),
 		0px -0.5px 0px hsla(var(--dark-brown-hsl-values), 0.4);
 	color: var(--dark-brown);
@@ -31,14 +31,14 @@ article:active h3::after {
 	content: ' 🥳';
 }
 
-article > div > div {
+article > div {
 	text-decoration: underline;
 }
 
-article > div > div::before {
+article > div::before {
 	content: '€ ';
 }
 
-article > div > div::after {
+article > div::after {
 	content: ',00';
 }
