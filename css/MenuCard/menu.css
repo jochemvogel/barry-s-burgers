@@ -1,23 +1,22 @@
 /* MENU CARD */
 main {
-	width: var(--menu-width);
-	background-color: var(--brown);
-	background-image: url('../../assets/wood-pattern.png');
-	border-radius: 1em;
-	box-shadow: 0 5px 6px hsla(var(--black-hsl-values), 0.4);
+    width: var(--menu-width);
+    background-color: var(--brown);
+    background-image: url("../../assets/wood-pattern.png");
+    border-radius: 1em;
+    box-shadow: 0 5px 6px hsla(var(--black-hsl-values), 0.4);
 
-	padding-bottom: 2em;
-	margin: 0 0 5em 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    padding-bottom: 2em;
+    margin: 0 0 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	color: var(--white);
-	z-index: 2;
+    color: var(--white);
 }
 
 @media only screen and (max-width: 400px) {
-	main {
-		padding: 0 2em;
-	}
+    main {
+        padding: 0 2em;
+    }
 }

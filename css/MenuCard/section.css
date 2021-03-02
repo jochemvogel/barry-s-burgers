@@ -1,32 +1,33 @@
 section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 section header {
-	background-color: hsla(var(--dark-brown-hsl-values), 0.8);
-	width: 45%;
-	margin: 2em;
-	border-radius: 0.5em;
+    background-color: hsla(var(--dark-brown-hsl-values), 0.8);
+    width: 45%;
+    margin: 2em;
+    border-radius: 0.5em;
 }
 
 /* === SECTION SEPERATOR === */
 hr {
-	margin-top: 2em;
-	border-top: 3px dotted hsla(var(--white-hsl-values), 0.5);
-	border-bottom: none;
-	width: 75%;
+    margin-top: 2em;
+    border-top: 3px dotted hsla(var(--white-hsl-values), 0.5);
+    border-bottom: none;
+    width: 75%;
 }
 
 hr:hover {
-	animation: rotateHr 8s forwards;
+    animation: rotateHr 8s forwards;
 }
 
 hr:first-of-type {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 hr:first-of-type:hover {
-	animation: none;
+    animation: none;
 }

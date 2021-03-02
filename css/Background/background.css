@@ -1,42 +1,39 @@
 /* CHECKERED BACKGROUND */
 body > div:first-of-type > div {
-	--degrees: 45deg;
+    --degrees: 45deg;
 
-	transition: all 6s ease-out;
-	transform-origin: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vw;
+    transition: all 6s ease-out;
+    transform-origin: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
 
-	background-color: var(--white);
-	background-image: linear-gradient(
-			var(--degrees),
-			var(--black) 25%,
-			0%,
-			transparent 75%,
-			var(--black) 0%
-		),
-		linear-gradient(
-			-45deg,
-			var(--black) 25%,
-			0%,
-			transparent 75%,
-			var(--black) 0%
-		);
-	background-size: var(--squares) var(--squares);
-
-	z-index: -1;
+    background-color: var(--white);
+    background-image: linear-gradient(
+            var(--degrees),
+            var(--black) 25%,
+            0%,
+            transparent 75%,
+            var(--black) 0%
+        ),
+        linear-gradient(
+            -45deg,
+            var(--black) 25%,
+            0%,
+            transparent 75%,
+            var(--black) 0%
+        );
+    background-size: var(--squares) var(--squares);
 }
 
 /* BACKGROUND OVERLAY */
 body > div:first-of-type > div > div {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-	background-color: hsla(var(--black-hsl-values), 0.8);
-	z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(var(--black-hsl-values), 0.8);
 }
