@@ -9,6 +9,17 @@ body > header {
     top: 1%;
 }
 
+@media only screen and (max-width: 400px) {
+    body > header {
+        width: 95%;
+        top: 2.5%;
+    }
+
+    body > header > p {
+        display: none;
+    }
+}
+
 h1 {
     transition: all 1.5s cubic-bezier(0.75, -0.06, 0.06, 1.54);
 }

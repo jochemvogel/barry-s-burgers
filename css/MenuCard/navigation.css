@@ -1,31 +1,41 @@
 /* CARD NAVIGATION => BURGERS, TOPPINGS ETC. */
 main ul {
-	display: flex;
-	margin: 0.5em 0 0 0;
-	position: sticky;
-	top: 20%;
+    display: flex;
+    margin: 0.5em 0 0 0;
+    position: sticky;
+    top: 20%;
 }
 
 main ul li {
-	margin: 2em;
-	list-style: none;
+    margin: 2em;
+    list-style: none;
 }
 
 main ul li:hover {
-	animation: hoverShuffle 1s infinite;
-	text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
-		-1px 1px 0 var(--black), 1px 1px 0 var(--black);
+    animation: hoverShuffle 1s infinite;
+    text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black),
+        -1px 1px 0 var(--black), 1px 1px 0 var(--black);
 }
 
 main ul li a {
-	text-decoration: none;
-	color: var(--white);
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 1.5em;
-	letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 main ul li:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 400px) {
+    main ul {
+        display: none;
+    }
+
+    main hr:first-of-type {
+        display: none;
+    }
 }

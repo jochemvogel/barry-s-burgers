@@ -5,6 +5,12 @@ article {
     margin: 1.5em 0;
 }
 
+@media only screen and (max-width: 400px) {
+    article {
+        width: 95%;
+    }
+}
+
 article p,
 article h3,
 article h4,
