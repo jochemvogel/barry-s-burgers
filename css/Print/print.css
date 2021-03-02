@@ -1,60 +1,76 @@
 body > div:first-of-type,
 hr,
 main ul {
-	display: none;
+    display: none;
 }
 
 main {
-	background: none;
-	width: 95%;
-	border-top: 1px solid hsla(var(--black-hsl-values), 0.2);
-	margin-top: 27.5em;
+    background: none;
+    width: 95%;
+    border-top: 1px solid hsla(var(--black-hsl-values), 0.2);
+    margin-top: 27.5em;
 }
 
 body > header {
-	box-shadow: none;
-	background-color: transparent;
-	color: var(--black);
-	font-weight: 700;
-	font-size: 1.2em;
-	width: 85%;
-	position: absolute;
-	top: 1%;
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 85%;
+    position: absolute;
+    top: 1%;
 }
 
 body > header > p {
-	margin-top: -1em;
+    margin-top: -1em;
 }
 
 section {
-	margin-top: 0;
-	page-break-before: always;
+    position: relative;
+    margin-top: 0;
+    page-break-before: always;
 }
 
 section > header {
-	background-color: transparent;
-	color: hsla(var(--black-hsl-values), 0.7);
-	margin: 0;
+    position: relative;
+    background-color: transparent;
+    color: hsla(var(--black-hsl-values), 0.7);
+    margin: 0;
+    page-break-before: always;
+}
+
+/* Page break before work around */
+section:not(:first-of-type) > header {
+    margin-top: 12.5em;
 }
 
 article {
-	break-inside: avoid;
-	page-break-inside: avoid;
+    position: relative;
+    display: inline-block;
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 body > div:last-of-type {
-	margin-top: 20em;
+    margin-top: 20em;
 }
 
+/* Burger */
 body > div:last-of-type > div {
-	--bread-height: 125px;
-	--top-pits-position: -230px;
-	--bottom-pits-position: -205px;
+    --bread-height: 125px;
+    --top-pits-position: -230px;
+    --bottom-pits-position: -205px;
 
-	box-shadow: var(--offset-x-items) 50px var(--pickle-green),
-		var(--offset-x-items) 85px var(--meat-brown),
-		var(--offset-x-items) 120px var(--cheese-yellow),
-		var(--offset-x-items) 155px var(--meat-brown),
-		var(--offset-x-items) 180px var(--ketchup-red);
-	transform: rotate(3deg);
+    box-shadow: var(--offset-x-items) 50px var(--pickle-green),
+        var(--offset-x-items) 85px var(--meat-brown),
+        var(--offset-x-items) 120px var(--cheese-yellow),
+        var(--offset-x-items) 155px var(--meat-brown),
+        var(--offset-x-items) 180px var(--ketchup-red);
+    transform: rotate(3deg);
+}
+
+/* Back of card */
+article > div > div:last-of-type {
+    display: none;
 }
