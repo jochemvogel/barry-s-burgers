@@ -94,7 +94,7 @@ In een typisch Amerikaans restaurant zie je vaak een ‘checkered’ vloer. Dit 
 <details>
 <summary>Video die laat zien hoe het animeren eruit ziet: </summary>
 
-![Checkered background](https://im7.ezgif.com/tmp/ezgif-7-f824b6e24078.gif)
+![Checkered background](https://github.com/jochemvogel/css-to-the-rescue-2021/blob/master/docs/week2/checkered-background.gif)
 
 </details>
 
