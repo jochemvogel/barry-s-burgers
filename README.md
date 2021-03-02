@@ -15,23 +15,23 @@
 
 ## Week 4
 
-### Restricties
+### ⛓ Restricties
 
 Als restricties had ik twee kleuren en level AAA WCAG gekozen. Als je de burger niet mee rekent, is het gebruik van twee kleuren gelukt. Naast zwart en wit (geen kleuren), heb ik twee verschillende kleuren bruin gebruikt. Ik heb custom proporties voor de hsl waardes aangemaakt, zodat ik deze in de hele pagina kon gebruiken en alleen de alpha waarde hoefde aan te passen. Ik vond dit wel een leuke uitdaging.
 
-### Trots
+### 😇 Trots
 
 Zelf ben ik wel trots op de burger (incl. de laser animatie). Ik heb het met 1 div (uiteindelijk met twee i.v.m. de hover) gemaakt. Daarnaast is de laser met een polygon gemaakt. Ik had in eerste instantie echt geen idee wat dit was en hoe het werkte. Dit zijn van die typische dingen waar je nooit de tijd voor neemt, maar wel leuk zijn om te weten.
 
 Daarnaast heb ik ergens `section:not(:first-of-type) > header` gebruikt. Dit is niet onwijs speciaal, maar in het begin had ik echt geen idee hoe al deze selectoren werkten. Dit is dan even een voorbeeld, maar zo waren er nog een aantal van dit soort dingen. Ik heb het gevoel dat ik, met wellicht wat moeite, elk element in de DOM zou kunnen selecteren zonder een class te gebruiken.
 
-### Uitdagende experimenten
+### 😩 Uitdagende experimenten
 
 Ik zal het niet mislukt noemen, aangezien er een hoop dingen zijn die ik geleerd, maar het selecteren van een vorm of kleuren is wel mislukt. Ik had graag gezien dat de gebruiker dit kon aanpassen, maar ik krijg/kreeg dit niet werkend zonder JavaScript.
 
 Daarnaast heb ik ontzettend veel tijd besteed aan het werkend krijgen van het ‘keuzemenu’ (voor de achtergrond). Door een optie te kiezen, moet de achtergrond aangepast worden. Alleen deze achtergrond staat op een hele andere plek in de DOM. Zo ben ik wel even zoet geweest om dat werkend te krijgen. Ik ben niet tevreden met de manier hoe het nu staat in de DOM, maar het werkt in ieder geval wel. Ik vind het zelf een beetje rommelig staan, maar in mijn optiek kan het niet anders.
 
-### Wat wil ik meer gaan doen
+### 🤩 Wat wil ik meer gaan doen
 
 Het maken van custom properties op basis van de HSL values. Door dit te doen creëer je consistentie, maar is het nog wel mogelijk om hier en daar de alpha aan te passen. Stel dat je een button hebt, dan zou je de hover state bijvoorbeeld een alpha van 0.5 kunnen geven. Hetzelfde geldt voor schaduwen bijvoorbeeld. Door de restrictie van twee kleuren moest ik creatief zijn en anders was ik hier nooit op gekomen.
 
@@ -39,11 +39,11 @@ Daarnaast ga ik vaker gebruik maken van selectoren. In een hoop projecten is er 
 
 ## Week 3
 
-### Structuur aangebracht
+### 📦 Structuur aangebracht
 
 Ik merkte dat mijn style.css enorm groot werd en daarom heb ik het geprobeerd om te ordenen. Op ten duur wist ik niet meer waar ik moest zijn om iets aan te passen en dit gaf mij een reden om het allemaal even beter te structureren. Zelf ben ik bekend met gebruiken van components in JavaScript en daarom heb ik geprobeerd om alle css in dit project ook op deze manier te ordenen.
 
-### Single div burger
+### 🍔 Single div burger
 
 Door de talk van Olivia Ng leek het mij leuk om ook wat te gaan doen met een single div. Ik heb toen een beetje op [singlediv.com](http://singlediv.com) en CodePen gekeken en uiteindelijk kwam ik erachter dat ik in dit geval het beste een box-shadow kon gebruiken. Zelf wist ik niet dat je dit hiervoor kon gebruiken, dus dat was ook wel leuk om eens te doen. Uiteindelijk heb ik er ook nog een laser aan toegevoegd. Dit alles heeft mij wel bijna twee dagen gekost, maar dit soort dingen zou ik anders nooit gedaan hebben. Bij die laser heb ik bijvoorbeeld nog gekeken naar een (geanimeerde) polygon. Polygons waren wat mij betreft een groot raadsel. Door middel van Clippy is het mij gelukt om het iets minder raadselachtig te maken. Bij de polygon animatie heb ik ook wat comments voor mijzelf neergezet, zodat ik een beter overzicht heb van wat het is. Daarnaast maak ik bij dat soort dingen veel gebruik van custom properties, zodat ik weet waar alles voor staat.
 
@@ -54,21 +54,21 @@ Door de talk van Olivia Ng leek het mij leuk om ook wat te gaan doen met een sin
 
 </details>
 
-### Draaien van cards
+### 🃏 Draaien van cards
 
 Het leek mij wel leuk om op de achterkant van de cards nog wat tekst neer te zetten. Op ten duur begreep ik wel dat er een div aan toegevoegd moet worden om het over effect te laten werken. Dit duurde enige tijd, maar uiteindelijk heb ik het werkend.
 
-### Accessibility
+### ♿️ Accessibility
 
 Een van mijn restricties was A11y. Ik heb hier al wel eens goed naar gekeken, maar ik betrap mezelf erop dat ik weer een hoop ben vergeten. Om deze reden leek het mij leuk om hier ook naar te kijken.
 
 Wordt aangevuld..
 
-### Talks
+### 📢 Talks
 
 Bij bijvoorbeeld de talk van Vitaly kwamen er een hoop links aan bod. Hier heb ik er een hoop van gekopieerd en in een Google Docs geplakt. Door deze links ben ik op een hoop andere links gekomen waar veel informatie te vinden was, zoals Google Fonts, LCS Colors & Container Queries. Google Fonts kopieerde ik altijd gewoon in mijn projecten, alsof er niets aan de hand was, alleen ik had nooit de neiging gehad om die link eens te bezoeken en kijken wat ik nou eigenlijk allemaal inlaadde. Vitaly liet bijvoorbeeld iets zien als `@font-face`, terwijl ik daar nog nooit van gehoord had. Na het openen van zo'n `fonts.googleapis.com` weet ik nu wat hierachter zit. Dit is even een voorbeeld, maar zo was ik na de talk nog wel ruim een uur bezig om nog meer dingen op te zoeken. Super leerzaam al die talks.
 
-### Aanpassingen plan
+### 📝 Aanpassingen plan
 
 In week 1 vertelde ik dat ik een stylesheet per schermgrootte wilde gaan doen. Dit had ik nog nooit gedaan en leek mij wel leuk. Achteraf gezien ben ik hier vanaf gestapt, aangezien het niet de leesbaarheid van mijn code zou bevorderen. Ik maak nu gebruik van components en media queries horen daarom gewoon het de desbetreffende map.
 
@@ -76,7 +76,7 @@ Daarnaast wilde ik nog naar andere restricties en/of contexten kijken als ik tij
 
 ## Week 2
 
-### Engraving effect
+### 🪵 Engraving effect
 
 Ik heb geprobeerd om een engraving effect te creëren. Het was mijn idee om de menukaart van hout te maken. Het leek mij in ieder geval wel een toevoeging hebben. Vervolgens leek het mij tof om een soort graveer effect te hebben (dus dat de tekst in het hout zit). Dit heb ik geprobeerd met een text shadow te doen. Ik heb me wel verdiept in wat text shadow ongeveer is, dus dat is goed. Overigens ben ik niet erg tevreden met het resultaat. Als je heel goed kijkt (en inzoomt) zie je het effect wel een beetje. Het lukte mij niet om het nog mooier te maken.
 
@@ -87,7 +87,7 @@ Ik heb geprobeerd om een engraving effect te creëren. Het was mijn idee om de m
 
 </details>
 
-### Schaakbord achtergrond
+### 🏁 Schaakbord achtergrond
 
 In een typisch Amerikaans restaurant zie je vaak een ‘checkered’ vloer. Dit effect wilde ik ook creëren bij het menu. Dit heb ik gedaan door middel van een linear-gradient. Bij het maken hiervan kreeg ik direct het idee om het dynamisch te maken. Ik vond het erg lastig om dit zonder JavaScript te doen, maar uiteindelijk is het veranderen van de grootte gelukt. Het leek mij ook wel een leuk idee om de vorm aan te passen (d.m.v. degrees) en de kleur. Dit was echter te lastig met alleen CSS, dus daarom heb ik dit niet gedaan. Ook heb ik er een effect aan toegevoegd, zodat deze met een transitie van grootte veranderd. Voegt toch nog wel iets toe.
 
@@ -98,7 +98,7 @@ In een typisch Amerikaans restaurant zie je vaak een ‘checkered’ vloer. Dit 
 
 </details>
 
-### Print
+### 🖨 Print
 
 In principe ben ik in week drie ook nog bezig geweest met print, maar in week 2 heb ik wel het meeste gedaan. Ik wist niet eens dat dit kon, dus er ging een wereld voor mij open. Dit neemt niet weg dat ik geen fan ben van print, aangezien browsers vaak een eigen wil hebben en niet willen luisteren. Zo heb ik bijvoorbeeld zowel een `break-inside: avoid`, als een` page-break-inside: avoid` toegepast. Beiden doen ze niet wat ze moeten doen (in Chrome niet, maar in Safari al helemaal niet).
 
