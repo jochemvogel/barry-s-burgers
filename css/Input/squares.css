@@ -63,11 +63,11 @@ body > div:first-of-type > label:hover {
 }
 
 /* When small is selected */
-#small:checked ~ div[data-background] {
+#small:checked ~ div {
     --squares: 50px;
 }
 
 /* When large is selected */
-#large:checked ~ div[data-background] {
+#large:checked ~ div {
     --squares: 200px;
 }
