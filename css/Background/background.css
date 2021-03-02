@@ -1,3 +1,4 @@
+/* CHECKERED BACKGROUND */
 body > div:first-of-type > div {
 	--degrees: 45deg;
 
@@ -29,6 +30,7 @@ body > div:first-of-type > div {
 	z-index: -1;
 }
 
+/* BACKGROUND OVERLAY */
 body > div:first-of-type > div > div {
 	display: flex;
 	align-items: center;
