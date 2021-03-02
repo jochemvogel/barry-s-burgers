@@ -17,7 +17,7 @@
 
 ### ⛓ Restricties
 
-Als restricties had ik twee kleuren en level AAA WCAG gekozen. Als je de burger niet mee rekent, is het gebruik van twee kleuren gelukt. Naast zwart en wit (geen kleuren), heb ik twee verschillende kleuren bruin gebruikt. Ik heb custom proporties voor de hsl waardes aangemaakt, zodat ik deze in de hele pagina kon gebruiken en alleen de alpha waarde hoefde aan te passen. Ik vond dit wel een leuke uitdaging.
+Als restricties had ik twee kleuren en level AAA WCAG gekozen. Als je de burger niet mee rekent, is het gebruik van twee kleuren gelukt. Naast zwart en wit (geen kleuren), heb ik twee verschillende kleuren bruin gebruikt. Ik heb custom proporties voor de hsl waardes aangemaakt, zodat ik deze in de hele pagina kon gebruiken en alleen de alpha waarde hoefde aan te passen. Ik vond dit wel een leuke uitdaging. Het halen van level AAA heb ik helaas niet gehaald. Hier komt ik later in de README op terug.
 
 ### 😇 Trots
 
@@ -31,11 +31,15 @@ Ik zal het niet mislukt noemen, aangezien er een hoop dingen zijn die ik geleerd
 
 Daarnaast heb ik ontzettend veel tijd besteed aan het werkend krijgen van het ‘keuzemenu’ (voor de achtergrond). Door een optie te kiezen, moet de achtergrond aangepast worden. Alleen deze achtergrond staat op een hele andere plek in de DOM. Zo ben ik wel even zoet geweest om dat werkend te krijgen. Ik ben niet tevreden met de manier hoe het nu staat in de DOM, maar het werkt in ieder geval wel. Ik vind het zelf een beetje rommelig staan, maar in mijn optiek kan het niet anders.
 
+Ook had ik graag iets met flikkerende Neon lichten willen doen. Dit zie je vaak bij Amerikaanse restaurants. Ik herinnerde mij te laat dat ik dit idee nog had bedacht. Dat dit niet gelukt is, heeft meer te maken met een gebrek aan tijd, dan aan onkunde. Ik had er even naar gekeken en heb ongeveer wel een beeld (de juiste fonts & text shadow) hoe het moet, maar het is nog vrij lastig om dat allemaal werkend te krijgen en het zou te lang duren om dit allemaal werkend te krijgen. Om deze reden is dit niet gelukt. Vind het wel jammer, want ik denk dat het echt wel een leuke toevoeging geweest zou zijn.
+
 ### 🤩 Wat wil ik meer gaan doen
 
 Het maken van custom properties op basis van de HSL values. Door dit te doen creëer je consistentie, maar is het nog wel mogelijk om hier en daar de alpha aan te passen. Stel dat je een button hebt, dan zou je de hover state bijvoorbeeld een alpha van 0.5 kunnen geven. Hetzelfde geldt voor schaduwen bijvoorbeeld. Door de restrictie van twee kleuren moest ik creatief zijn en anders was ik hier nooit op gekomen.
 
 Daarnaast ga ik vaker gebruik maken van selectoren. In een hoop projecten is er een code standaard waar bijvoorbeeld BEM gebruikt MOET worden. Hier ben ik niet op tegen, aangezien ik hier groot voorstander van ben. Wél kan ik in mijn eigen projecten vaker selectoren gebruiken. Ik wist in het begin niet echt het verschil tussen bijvoorbeeld ~ + en >. Dit weet ik niet wel en eigenlijk is het super krachtig. Ik zeg niet dat ik geen classes meer ga gebruiken, maar zeker wel minder snel.
+
+Tenslotte heb ik voor mezelf besloten om eens in de zoveel tijd dit soort projectjes te gaan doen. De afgelopen vier weken heb ik zo ontzettend veel geleerd over CSS. Normaal had ik dit soort dingen niet doen, omdat ik vond dat het geen doel had, maar achteraf gezien ga ik het toch vaker doen, omdat het eigenlijk best wel leuk is en je een hoop leert. Door de afgelopen weken ben ik er ook achter gekomen hoeveel ik nog niet weet (_insert Socrates quote_). Ik moet eerlijk toegeven dat ik wellicht geen 'CSS-kunstenaar' ga worden, want ik heb er persoonlijk ook niet echt het geduld voor. Wél vind ik het leuk om met bepaalde (kleine) dingen te experimenteren. Ik denk ook dat CSS een leuke toevoeging kan zijn aan de UX. Hele kleine dingetjes kunnen er wel voor zorgen dat iets leuker (of minder stom) wordt. Een heel makkelijk voorbeeld hiervan is een loader, maar zo zijn er nog meer dingen.
 
 ## Week 3
 
@@ -60,9 +64,7 @@ Het leek mij wel leuk om op de achterkant van de cards nog wat tekst neer te zet
 
 ### ♿️ Accessibility
 
-Een van mijn restricties was A11y. Ik heb hier al wel eens goed naar gekeken, maar ik betrap mezelf erop dat ik weer een hoop ben vergeten. Om deze reden leek het mij leuk om hier ook naar te kijken.
-
-Wordt aangevuld..
+Een van mijn restricties was A11y. Ik heb hier al wel eens goed naar gekeken, maar ik betrap mezelf erop dat ik weer een hoop ben vergeten. Om deze reden leek het mij leuk om hier ook naar te kijken. Achteraf gezien heb de tijd verkeerd ingeschat. Doordat je bezig bent met allemaal nieuwe/leuke dingen, vergeet je soms aan je restricties te denken. Iets als accessibility 'komt wel', maar voor je het weet, ben je aan het einde en komt er niets meer van. Na de oplevering wil ik voor mijzelf nog wel naar de accessibility van deze website kijken, omdat ik er zelf graag nog meer over te weten wil komen. Ik weet van de vorige keer dat ik die lijst ben doorgelopen dat er veel dingen zijn die je volkomen over het hoofd ziet en daarom lijkt mij het nog interessant.
 
 ### 📢 Talks
 
@@ -73,6 +75,13 @@ Bij bijvoorbeeld de talk van Vitaly kwamen er een hoop links aan bod. Hier heb i
 In week 1 vertelde ik dat ik een stylesheet per schermgrootte wilde gaan doen. Dit had ik nog nooit gedaan en leek mij wel leuk. Achteraf gezien ben ik hier vanaf gestapt, aangezien het niet de leesbaarheid van mijn code zou bevorderen. Ik maak nu gebruik van components en media queries horen daarom gewoon het de desbetreffende map.
 
 Daarnaast wilde ik nog naar andere restricties en/of contexten kijken als ik tijd over had, maar eigenlijk heb ik niet zo heel veel tijd over. Door te experimenteren met verschillende dingen heb ik minder tijd over dan dat ik dacht. Is in principe niet erg, maar ik ben er nu achter gekomen dat ik deze dingen niet meer ga halen.
+
+### 💡 Inzichten
+
+-   Single Divs. Super vet.
+-   Web Vitals (a.d.h.v. wat links die ik via via ergens tegen kwam)
+-   Draaien van cards (en dan met name: hover op de div erboven zetten)
+-   Hoe CSS gestructureerd kan worden (wat ik in ieder geval fijn vind)
 
 ## Week 2
 
@@ -118,6 +127,12 @@ Uiteindelijk half opgelost door wat `margin-top`. Heb heel wat oplossingen (onli
 
 </details>
 
+### 💡 Inzichten
+
+-   Print style sheets: ze bestaan echt. Zonder grappen: ik wist dus echt niet dat dit bestond.
+-   Het dynamisch maken van iets zonder JavaScript (dus met radio buttons bijv.)
+-   Voor de rest was dit voornamelijk een lekker creatief weekje waarin ik gewoon wat dingen ging proberen en aan het einde van de week viel alles enigszins op z'n plek en wist ik ongeveer wat ik wilde doen.
+
 ## Week 1
 
 Ik heb gekozen voor de menu opdracht. Het lijkt mij leuk om een menu van een klassiek Amerikaans burger restaurant te maken.
@@ -141,6 +156,21 @@ Tijdens het ontwikkelen zal ik ongetwijfeld nog wat andere CSS-technieken vinden
 Mijn uitdaging zal de **Selector First CSS-aanpak** zijn. Zelf ben ik gewend om met klassen te werken en het zal dus voor mij nog wel een uitdaging zijn om straks een pagina te hebben zonder klassen. Neemt niet weg dat ik het een leuke uitdaging vind, omdat ik mij meer moet gaan verdiepen in bijv. _selectors_ en _specificity_.
 
 In het begin merkte ik dat ik veel moeite had met de schetsen, omdat ik nog niet echt wist wat ik wilde. ik ben eerst in CSS gaan experimenteren met CSS-technieken die ik nog niet kende en vanuit daar kwamen er een hoop ideeën. Deze heb ik vervolgens in een schets gestopt en deze is hieronder te vinden.
+
+<details>
+<summary>Inspiratie Amerikaanse restaurants: </summary>
+
+![Amerikaans restaurant](https://github.com/jochemvogel/css-to-the-rescue-2021/blob/master/docs/week1/amerikaans-restaurant-1.jpeg)
+![Amerikaans restaurant](https://github.com/jochemvogel/css-to-the-rescue-2021/blob/master/docs/week1/amerikaans-restaurant-2.jpg)
+
+</details>
+
+<details>
+<summary>Inspiratie Amerikaanse restaurant neon </summary>
+
+![Amerikaans restaurant](https://github.com/jochemvogel/css-to-the-rescue-2021/blob/master/docs/week1/amerikaans-restaurant-neon.jpg)
+
+</details>
 
 <details>
 <summary>Schets van eerste week: </summary>
