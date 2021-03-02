@@ -82,6 +82,7 @@ Daarnaast wilde ik nog naar andere restricties en/of contexten kijken als ik tij
 -   Web Vitals (a.d.h.v. wat links die ik via via ergens tegen kwam)
 -   Draaien van cards (en dan met name: hover op de div erboven zetten)
 -   Hoe CSS gestructureerd kan worden (wat ik in ieder geval fijn vind)
+-   Tot een bepaalde hoogte begrijp ik nu hoe clip paths werken
 
 ## Week 2
 
