@@ -12,6 +12,12 @@ section header {
     border-radius: 0.5em;
 }
 
+@media only screen and (max-width: 800px) {
+    section header {
+        width: 85%;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     section header {
         width: 95%;

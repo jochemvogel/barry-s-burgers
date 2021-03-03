@@ -6,12 +6,22 @@
 
 <table>
     <tr>
+        <td align="center"><a href="#herkansing">🔁 Herkansing<a></td>
         <td align="center"><a href="#week-4">4️⃣ Week 4<a></td>
         <td align="center"><a href="#week-3">3️⃣ Week 3<a></td>
         <td align="center"><a href="#week-2">2️⃣ Week 2<a></td>
         <td align="center"><a href="#week-1">1️⃣ Week 1<a></td>
+        <td align="center"><a href="#bronnen">ℹ️ Bronnen<a></td>
     </tr>
 </table>
+
+## Herkansing
+
+Tijdens de beoordeling kwamen er twee dingen/onderdelen terug die niet voldoende waren. Een daarvan was de UX. De website ziet er prima uit, alleen deze is nog niet erg toegankelijk. Er waren al wat tabindexes toegevoegd, maar deze resulteerde niet in een betere ervaring van de gebruiker. Daarnaast was het nog niet geoptimaliseerd voor ieder scherm. Er zijn/waren al wel media queries aanwezig, maar deze werkte nog niet optimaal. Ook een andere hoogte dan 1080px werd nog niet goed afgehandeld.
+
+Het tweede punt waren de bronnen. Deze had ik toentertijd niet toegevoegd, maar dit heb ik nu wel gedaan.
+
+Wat dat betreft prima en concrete feedback waar ik mee aan de slag kon gaan.
 
 ## Week 4
 
@@ -179,3 +189,17 @@ In het begin merkte ik dat ik veel moeite had met de schetsen, omdat ik nog niet
 ![Schets week 1](https://github.com/jochemvogel/css-to-the-rescue-2021/blob/master/docs/week1/schets-week1.jpg)
 
 </details>
+
+## Bronnen
+
+-   [Clippy](https://bennettfeely.com/clippy/) (Laser animatie)
+-   [Single Div](https://a.singlediv.com/) (Inspiratie voor de burger)
+-   [A Guide To The State Of Print Stylesheets In 2018](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
+-   [Transparent Textures](https://www.transparenttextures.com/wood-pattern.html) (Wood pattern voor menu kaart)
+
+### Codepens
+
+-   [Rotating Cards](https://codepen.io/shibl/pen/PzBwjR)
+-   [Engraving Effect](https://codepen.io/daryl/pen/yAuGj) (Engraving effect voor cards)
+-   [Checkered background](https://codepen.io/lloeki/pen/Dvkqw) (Inspiratie voor het maken van schaakbord)
+-   [Neon sign](https://codepen.io/nodws/pen/bdjwn) (Starting point neon)

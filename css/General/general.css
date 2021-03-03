@@ -14,6 +14,12 @@
     --squares: 100px;
 }
 
+@media only screen and (max-width: 800px) {
+    :root {
+        --menu-width: 95vw;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     :root {
         --menu-width: 85vw;

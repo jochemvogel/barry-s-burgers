@@ -2,68 +2,68 @@
 Rotates the HR on hover
 */
 @keyframes rotateHr {
-	0% {
-		transform: rotate(0deg);
-	}
-	50% {
-		transform: rotate(90deg);
-	}
-	65% {
-		transform: rotate(90deg);
-	}
-	66% {
-		transform: rotate(720deg);
-	}
-	75% {
-		transform: rotate(180deg);
-	}
-	90% {
-		transform: rotate(90deg);
-	}
-	100% {
-		transform: rotate(90deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    65% {
+        transform: rotate(90deg);
+    }
+    66% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+    90% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
 }
 
 /*
 Creates shuffle effect on hover
 */
 @keyframes hoverShuffle {
-	0% {
-		transform: rotate(-5deg) scale(1.05);
-	}
-	12.5% {
-		transform: rotate(5deg) scale(1.05);
-	}
-	25% {
-		transform: rotate(-5deg) scale(1.05);
-	}
-	37.5% {
-		transform: rotate(5deg) scale(1.05);
-	}
-	50% {
-		transform: rotate(-5deg) scale(1.05);
-	}
-	62.5% {
-		transform: rotate(5deg) scale(1.05);
-	}
-	75% {
-		transform: rotate(-5deg) scale(1.05);
-	}
-	87.5% {
-		transform: rotate(5deg) scale(1.05);
-	}
-	100% {
-		transform: rotate(-5deg) scale(1.05);
-	}
+    0% {
+        transform: rotate(-5deg) scale(1.05);
+    }
+    12.5% {
+        transform: rotate(5deg) scale(1.05);
+    }
+    25% {
+        transform: rotate(-5deg) scale(1.05);
+    }
+    37.5% {
+        transform: rotate(5deg) scale(1.05);
+    }
+    50% {
+        transform: rotate(-5deg) scale(1.05);
+    }
+    62.5% {
+        transform: rotate(5deg) scale(1.05);
+    }
+    75% {
+        transform: rotate(-5deg) scale(1.05);
+    }
+    87.5% {
+        transform: rotate(5deg) scale(1.05);
+    }
+    100% {
+        transform: rotate(-5deg) scale(1.05);
+    }
 }
 
 /*
 
 === Laser Animation Description ===
 
-Named: 
-Quadrilateral 
+Named:
+Quadrilateral
 
 Numbers:
 (x, y)
@@ -78,70 +78,104 @@ Visually:
 */
 
 @keyframes lasersFired {
-	0% {
-		--first-point: 100% 0;
-		--second-point: 60% 40%;
-		--third-point: 4% 95%;
-		--fourth-point: 0 100%;
+    0% {
+        --first-point: 100% 0;
+        --second-point: 60% 40%;
+        --third-point: 4% 95%;
+        --fourth-point: 0 100%;
 
-		clip-path: polygon(
-			var(--first-point),
-			var(--second-point),
-			var(--third-point),
-			var(--fourth-point)
-		);
-	}
-	25% {
-		--first-point: 100% 0;
-		--second-point: 60% 40%;
-		--third-point: 4% 95%;
-		--fourth-point: 55% 46%;
+        clip-path: polygon(
+            var(--first-point),
+            var(--second-point),
+            var(--third-point),
+            var(--fourth-point)
+        );
+    }
+    25% {
+        --first-point: 100% 0;
+        --second-point: 60% 40%;
+        --third-point: 4% 95%;
+        --fourth-point: 55% 46%;
 
-		clip-path: polygon(
-			var(--first-point),
-			var(--second-point),
-			var(--third-point),
-			var(--fourth-point)
-		);
-	}
-	50% {
-		--first-point: 100% 0;
-		--second-point: 100% 0;
-		--third-point: 30% 71%;
-		--fourth-point: 80% 16%;
+        clip-path: polygon(
+            var(--first-point),
+            var(--second-point),
+            var(--third-point),
+            var(--fourth-point)
+        );
+    }
+    50% {
+        --first-point: 100% 0;
+        --second-point: 100% 0;
+        --third-point: 30% 71%;
+        --fourth-point: 80% 16%;
 
-		clip-path: polygon(
-			var(--first-point),
-			var(--second-point),
-			var(--third-point),
-			var(--fourth-point)
-		);
-	}
-	75% {
-		--first-point: 100% 0;
-		--second-point: 100% 0;
-		--third-point: 74% 25%;
-		--fourth-point: 80% 16%;
+        clip-path: polygon(
+            var(--first-point),
+            var(--second-point),
+            var(--third-point),
+            var(--fourth-point)
+        );
+    }
+    75% {
+        --first-point: 100% 0;
+        --second-point: 100% 0;
+        --third-point: 74% 25%;
+        --fourth-point: 80% 16%;
 
-		clip-path: polygon(
-			var(--first-point),
-			var(--second-point),
-			var(--third-point),
-			var(--fourth-point)
-		);
-	}
-	100% {
-		--first-point: 100% 0;
-		--second-point: 100% 0;
-		--third-point: 94% 5%;
-		--fourth-point: 81% 16%;
+        clip-path: polygon(
+            var(--first-point),
+            var(--second-point),
+            var(--third-point),
+            var(--fourth-point)
+        );
+    }
+    100% {
+        --first-point: 100% 0;
+        --second-point: 100% 0;
+        --third-point: 94% 5%;
+        --fourth-point: 81% 16%;
 
-		clip-path: polygon(
-			var(--first-point),
-			var(--second-point),
-			var(--third-point),
-			var(--fourth-point)
-		);
-		opacity: 0;
-	}
+        clip-path: polygon(
+            var(--first-point),
+            var(--second-point),
+            var(--third-point),
+            var(--fourth-point)
+        );
+        opacity: 0;
+    }
+}
+
+/* Blink animation for neon lights */
+@keyframes neonBlink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79% {
+        color: #333;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
 }

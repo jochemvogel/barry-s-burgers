@@ -18,6 +18,5 @@ main {
 @media only screen and (max-width: 400px) {
     main {
         padding: 2em;
-        margin-top: -17.5em;
     }
 }

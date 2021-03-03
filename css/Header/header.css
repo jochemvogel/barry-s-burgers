@@ -9,7 +9,7 @@ body > header {
     top: 1%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
     body > header {
         width: 95%;
         top: 2.5%;
@@ -21,17 +21,9 @@ body > header {
 }
 
 h1 {
-    transition: all 1.5s cubic-bezier(0.75, -0.06, 0.06, 1.54);
+    transition: all 0.2s ease-in;
 }
 
 h1:hover {
-    font-size: 3em;
-    text-transform: uppercase;
-    font-weight: bold;
-    transform: rotate(-5deg);
-    letter-spacing: 25px;
-}
-
-h1:hover::after {
-    content: " 🍔";
+    transform: rotate(-3deg);
 }
