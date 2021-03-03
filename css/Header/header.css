@@ -1,5 +1,4 @@
 body > header {
-    background-color: hsla(var(--black-hsl-values), 0.95);
     box-shadow: 0 15px 8px hsla(var(--black-hsl-values), 0.4);
     padding: 0.25em;
     border-radius: 0.5em;
@@ -7,6 +6,12 @@ body > header {
     position: fixed;
     width: 60%;
     top: 1%;
+
+    background: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center
+        no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 180px;
 }
 
 @media only screen and (max-width: 800px) {
