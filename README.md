@@ -196,6 +196,7 @@ In het begin merkte ik dat ik veel moeite had met de schetsen, omdat ik nog niet
 -   [Single Div](https://a.singlediv.com/) (Inspiratie voor de burger)
 -   [A Guide To The State Of Print Stylesheets In 2018](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 -   [Transparent Textures](https://www.transparenttextures.com/wood-pattern.html) (Wood pattern voor menu kaart)
+-   [Browser Technologies Course](https://github.com/jochemvogel/GameChanger) (voor accessibility)
 
 ### Codepens
 
