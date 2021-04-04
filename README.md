@@ -23,6 +23,12 @@ Het tweede punt waren de bronnen. Deze had ik toentertijd niet toegevoegd, maar 
 
 Wat dat betreft prima en concrete feedback waar ik mee aan de slag kon gaan.
 
+**Wat nog doen wat betreft de herkansing:**
+- [ ] Checkbox dat neon lights uit zet
+- [ ] Wellicht background (stenen) header uitzetten
+- [ ] Neon lights in print uitzetten
+- [ ] Build script voor CSS => devDependency (voor en na result => grootte)
+
 ## Week 4
 
 ### ⛓ Restricties
