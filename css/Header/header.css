@@ -1,15 +1,8 @@
 body > header {
-    box-shadow: 0 15px 8px hsla(var(--black-hsl-values), 0.4);
-    padding: 0.25em;
-    border-radius: 0.5em;
     color: var(--white);
     position: fixed;
     width: 60%;
     top: 1%;
-
-    background: url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center
-        no-repeat;
-    background-size: cover;
     margin: 0;
     min-height: 180px;
 }
@@ -31,4 +24,21 @@ h1 {
 
 h1:hover {
     transform: rotate(-3deg);
+}
+
+/* Neon lights */
+header input[type="checkbox"]:checked ~ h1 > div:nth-of-type(1) {
+    display: none;
+}
+
+/* Non-neon lights */
+header > h1 > div:nth-of-type(2) {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+header input[type="checkbox"]:not(:checked) ~ h1 > div:nth-of-type(2) {
+    display: none;
 }

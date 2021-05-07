@@ -24,16 +24,17 @@ Het tweede punt waren de bronnen. Deze had ik toentertijd niet toegevoegd, maar 
 Wat dat betreft prima en concrete feedback waar ik mee aan de slag kon gaan.
 
 **Wat nog doen wat betreft de herkansing:**
-- [ ] Checkbox dat neon lights uit zet
-- [ ] Wellicht background (stenen) header uitzetten
-- [ ] Neon lights in print uitzetten
-- [ ] Build script voor CSS => devDependency (voor en na result => grootte)
+
+-   [ ] Checkbox dat neon lights uit zet
+-   [ ] Wellicht background (stenen) header uitzetten
+-   [ ] Neon lights in print uitzetten
+-   [ ] Build script voor CSS => devDependency (voor en na result => grootte)
 
 ## Week 4
 
 ### ⛓ Restricties
 
-Als restricties had ik twee kleuren en level AAA WCAG gekozen. Als je de burger niet mee rekent, is het gebruik van twee kleuren gelukt. Naast zwart en wit (geen kleuren), heb ik twee verschillende kleuren bruin gebruikt. Ik heb custom proporties voor de hsl waardes aangemaakt, zodat ik deze in de hele pagina kon gebruiken en alleen de alpha waarde hoefde aan te passen. Ik vond dit wel een leuke uitdaging. Het halen van level AAA heb ik helaas niet gehaald. Hier komt ik later in de README op terug.
+Als restricties had ik twee kleuren en level AAA WCAG gekozen. Als je de burger niet mee rekent, is het gebruik van twee kleuren gelukt. Naast zwart en wit (geen kleuren), heb ik twee verschillende kleuren bruin gebruikt. Ik heb custom proporties voor de hsl waardes aangemaakt, zodat ik deze in de hele pagina kon gebruiken en alleen de alpha waarde hoefde aan te passen. Ik vond dit wel een leuke uitdaging. Het halen van level AAA heb ik helaas niet gehaald. Hier kom ik later in de README op terug.
 
 ### 😇 Trots
 
