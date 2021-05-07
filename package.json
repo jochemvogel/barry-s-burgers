@@ -1,0 +1,29 @@
+{
+    "name": "barrys-burgers",
+    "version": "1.0.0",
+    "description": "**[Live link](https://cssttr.jchm.dev/)**",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "start": "node .",
+        "build": "node scripts/build-css.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jochemvogel/css-to-the-rescue-2021.git"
+    },
+    "author": "Jochem Vogel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jochemvogel/css-to-the-rescue-2021/issues"
+    },
+    "homepage": "https://github.com/jochemvogel/css-to-the-rescue-2021#readme",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "nodemon": "^2.0.7"
+    }
+}
