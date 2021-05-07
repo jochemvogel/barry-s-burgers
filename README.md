@@ -23,6 +23,12 @@ Het tweede punt waren de bronnen. Deze had ik toentertijd niet toegevoegd, maar 
 
 Wat dat betreft prima en concrete feedback waar ik mee aan de slag kon gaan.
 
+**Wat nog doen wat betreft de herkansing:**
+- [ ] Checkbox dat neon lights uit zet
+- [ ] Wellicht background (stenen) header uitzetten
+- [ ] Neon lights in print uitzetten
+- [ ] Build script voor CSS => devDependency (voor en na result => grootte)
+
 ## Week 4
 
 ### ⛓ Restricties
@@ -196,6 +202,7 @@ In het begin merkte ik dat ik veel moeite had met de schetsen, omdat ik nog niet
 -   [Single Div](https://a.singlediv.com/) (Inspiratie voor de burger)
 -   [A Guide To The State Of Print Stylesheets In 2018](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 -   [Transparent Textures](https://www.transparenttextures.com/wood-pattern.html) (Wood pattern voor menu kaart)
+-   [Browser Technologies Course](https://github.com/jochemvogel/GameChanger) (voor accessibility)
 
 ### Codepens
 
