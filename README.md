@@ -25,10 +25,28 @@ Wat dat betreft prima en concrete feedback waar ik mee aan de slag kon gaan.
 
 **Wat nog doen wat betreft de herkansing:**
 
--   [ ] Checkbox dat neon lights uit zet
--   [ ] Wellicht background (stenen) header uitzetten
--   [ ] Neon lights in print uitzetten
--   [ ] Build script voor CSS => devDependency (voor en na result => grootte)
+-   [x] Checkbox dat neon lights uit zet
+-   [x] Wellicht background (stenen) header uitzetten
+-   [x] Neon lights in print uitzetten
+-   [x] Build script voor CSS (voor en na result => grootte)
+
+### Optimalisaties
+
+Ik heb ervoor gekozen om (met behulp van gulp) de css te optimaliseren. Zelf heb ik de css in verschillende mappen staan en deze werden geïmporteerd in de `main.css`. Vasilis gaf (terecht) aan dat dit allemaal requests zijn en daarom heb ik de css nu gebundeld.
+
+Omdat het om zo'n klein project gaat, is het verschil minimaal. De 'resources` waren eerst 899kb en zijn nu 746kb. Een daling van 17%. Het verschil in het aantal requests was wel een stuk groter. Terwijl dit er eerst 41 waren, zijn het er nu 26. Dat is een daling van 36%.
+
+Daarnaast zijn er nog een aantal mogelijkheden om het nog verder te optimaliseren. Je zou (Google) fonts kunnen downloaden en zelf kunnen toevoegen als assets. Deze zou je bijvoorbeeld weer kunnen cachen.
+
+#### NPM Scripts
+
+**`npm run build`**
+
+Het build script wordt uitgevoerd. Dit is een JavaScript bestand die gebruik maakt van gulp om alles in de `/public` folder te zetten.
+
+**`npm run watch`**
+
+Dit script watcht alle (css) files. Op het moment dat er een wordt aangepast, voert deze het build commando uit.
 
 ## Week 4
 
